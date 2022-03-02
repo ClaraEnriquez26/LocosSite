@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cervecería y bar de amigos">
+  <meta name="keywords" content="Cerveza, Cervecería, bar, birra, tragos">
+
+  <!--llamado a bootstrap-->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="/Proyectocoder/sass/estilos.css">
+
+  <!--llamado a fuentes-->  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" type="text/css" />
+</head>
+<body background="Imagenes/Inicio.png" class="imginicio">
+  <header>
+
+    <!--llamado a la cabecera y titulo--> 
+
+    <h1 class="title">LOCOS POR LA BIRRA </h1>
+      <input type="checkbox" id="btn-menu">
+      <label for="btn-menu"><img src="Imagenes/iconomenu.png" alt="iconomenu" class="iconomenu">
+      </label>
+    <nav class="menu">
+      <ul>
+      <li>
+      <a class="nav-link" href="Tienda.html">Tienda</a>
+      </li>
+      <li>
+      <a class="nav-link" href="galeria.html">Galería</a>
+      </li>
+      <li>
+      <a class="nav-link" href="Menu.html">Menú</a>
+      </li>
+      <li>
+      <a class="nav-link" href="#AnclaFooter">Newlestter</a>
+      </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--contenedor inicio-->
+
+  <article>
+    <div class="photo">
+      <svg style="border: none;" width="100%" height="450"> 
+        <rect x="20" y="20" width="1300" height="450"/>
+        <image xlink:href="Imagenes/estamoslocos-01.png" alt="locos" x=70 y=-140 width="100%"> 
+      </svg>
+    </div>
+  </article>
+
+  <!--contenedor carta-->
+
+  <main class="container-nav">
+    <div class="bg-0">
+    <a id="Carta" href="https://drive.google.com/drive/folders/1oxZJS-sAcoHYO9k0AXVDvmkQhtgdk5hu"><h1 class="carta t-stroke t-shadow-halftone">-CONOCE NUESTRA CARTA-</h1></a>
+    </div>
+  </main>
+
+  <!--mapas de sucursales-->
+
+  <section>
+      <h2 class="subtitle">SUCURSALES</h2></a>
+      <div class="row">
+      <div class="col-md-6">
+      <a href="https://www.google.com/maps/place/Locos+Por+La+Birra/@-34.8186856,-58.4698674,15z/data=!4m2!3m1!1s0x0:0x8e9d90c82d6d77e?sa=X&ved=2ahUKEwjjmevClI7yAhX-DrkGHQFwBuQQ_BIwCnoECFMQBQ"><img class="column-1"
+      src="Imagenes/Mapa3.png" alt="Mapa"  height="100%" ></a>
+      </div>
+      <div class="col-md-6">  
+      <a href="https://www.google.com/maps/place/Locos+por+la+Birra+Adrogue/@-34.7971686,-58.3924704,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcd302af1e332d:0x50fdc43cc70d74c6!8m2!3d-34.7971686!4d-58.3902817"><img class="column-2"
+      src="Imagenes/mapa5.png" alt="Mapa"  height="100%" ></a>
+      </div>
+      </div>    
+  </section>
+
+  <!--foto eventos-->
+
+  <aside>
+    <a id="Eventos" class="border" href="Eventos.html"><h2 class="subtitle">GALERÍA</h2></a>
+    <img class="foto-eventos" src="Imagenes/fondo8.png" alt="Eventos">
+  </aside>
+
+  <!--pie de pagina-->
+
+<footer class="modifier" id="AnclaFooter">
+    <div class=".col-lg-12">
+      <h2 class="subtitle--modifier">Preguntas frecuentes</h2>
+      <br>
+      <h5 class="preguntas">¿Como contrato el servicio gastronómico?</h5>
+        <h6 class="respuesta">Comunicate con nosotros por MD o por eventoslocosporlabirra@hotmail.com</h6>
+        <br>
+        <h5 class="preguntas">¿A través de que medios puedo abonar mi pedido?</h5>
+        <h6 class="respuesta">Contamos con posnet para tarjetas y mercado pago</h6>
+        <br>
+        <h5 class="preguntas">¿Cuál es el costo del envío?</h5>
+        <p class="respuesta">El costo de envío para nuestra zona de alcance (Zona sur) $300</p>
+        <br>
+        <h5 class="preguntas">¿Cómo se realizan los envíos?</h5>
+        <h6 class="respuesta">Moto mensajería y Correo Argentino</h6>
+        <br>
+        <h5 class="preguntas">¿Qué días realizan entregas?</h5>
+        <h6 class="respuesta">De Lunes a Viernes hasta las 19hs</h6>
+      <h3 class="textofooter">Newsletter</h3>
+      <form action="#">
+      <div>
+      <label class="contacto" for="email">Email:</label>
+      <br>
+      <input type="name" class="bordes" id="name" placeholder="Nombre" name="name">
+      <br>
+      <input type="email" class="bordes" id="email" placeholder="Ingrese email" name="email">
+      <br>
+      <button type="submit" class="bordeenviar btn btn-info">Enviar</button>
+      <br>
+    </div>
+    <br>
+    <br>
+    <div class="contacto">
+        <h3>Contacto</h3>
+        <p>115555555</p>
+        <p>eventoslocosporlabirra@hotmail.com</p>
+        <p>Dorrego 308</p>
+        <br>
+        <h3>Nuestras redes sociales</h3>
+        <div>
+          <a href="https://www.instagram.com/locosporlabirra/?hl=es-la"><img class="instagram" src="Imagenes/Instagram-logo.png"></a>
+          <a href="https://www.facebook.com/Locos-por-la-birra-1980610685509360"><img class="instagram" src="Imagenes/facebook-770688_640.png"></a>
+        </div>
+        <br>
+        <h3>Medios de pago</h3>
+      
+        <img class="pay-v" src="Imagenes/visalogo.png" alt="visa">
+        <img class="pay-m" src="Imagenes/masterc.png" alt="master">
+        <img class="pay-a" src="Imagenes/american2.png" alt="american">
+        <img class="pay-b" src="Imagenes/banelco.png" alt="banelco">
+        <img class="pay-c" src="Imagenes/cabal.png" alt="cabal">
+        <img class="pay-t" src="Imagenes/tarjetash.png" alt="tarjetash">
+        <img class="pay-mp" src="Imagenes/mercadopago.png" alt="mp">
+        <br>
+        <h3>Más info</h3>
+        <a href="index2.html" >Inicio</a>
+        <br>
+        <a href="Eventos.html">Eventos</a>
+        <br>
+        <a href="Menu.Html">Menú</a>
+        <br>
+        <a href="Tienda.html">Tienda</a>
+        <br>
+    </div>
+</footer>
+
+</body>
+</html>
