@@ -1,0 +1,242 @@
+@charset "UTF-8";
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+/* ---> Menù <--- */
+main {
+  color: black;
+  margin: 0;
+  max-width: 1200px;
+  min-width: 200px;
+  min-height: 50vh;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header header header" "nav nav nav" "section section section" "aside aside aside" "footer footer footer";
+  -ms-grid-rows: 330px 350px 450px 400px 850px;
+      grid-template-rows: 330px 350px 450px 400px 850px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* ---> header <--- */
+header {
+  background-color: #a2c7ff;
+  -ms-grid-column-span: 3;
+  grid-area: header;
+  overflow: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  height: 70px;
+  width: 100vw;
+  padding: 1%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+header div {
+  float: right;
+  margin-right: 4px;
+  padding-bottom: 50px;
+}
+
+header .instagram {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin: 5px;
+  top: -38px;
+  right: 100px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header .title {
+  font-family: "Bebas Neue";
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  text-decoration: underline;
+  float: left;
+  margin-top: 0px;
+  margin-left: 20px;
+}
+
+header .nav-link {
+  color: whitesmoke;
+  font-family: "Manrope" sans-serif;
+}
+
+/* --> cabecera tienda <-- */
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu ul a {
+  height: 10px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  padding-right: 150px;
+  padding-top: 6px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#menu ul a li {
+  font-family: "Manrope" sans-serif;
+  margin: 10px;
+  background-color: #a2c7ff;
+  width: 25%;
+  float: right;
+  list-style-type: none;
+  position: relative;
+}
+
+#menu ul a li li:hover {
+  background: #a2c7ff;
+}
+
+#menu ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  padding: 0;
+}
+
+#menu ul ul li {
+  float: none;
+  width: 150px;
+}
+
+#menu ul ul li a {
+  line-height: 40%;
+  padding: 10px 8px 10px 10px;
+}
+
+/* textos */
+.subtitle {
+  font-family: "Bebas Neue";
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+  color: black;
+}
+
+.subtitle--modifier {
+  font-family: "Manrope" sans-serif;
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+}
+
+.titulo2--modifier {
+  font-family: "Manrope" sans-serif;
+  font-size: 20px;
+  text-align: left;
+  color: black;
+  margin-left: 200px;
+  margin-top: 30px;
+}
+
+.textofooter {
+  font-family: "Manrope" sans-serif;
+  color: white;
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+
+.bordes {
+  font-family: "Manrope" sans-serif;
+  outline: none;
+  opacity: 30%;
+  border: 0;
+  padding: 5px;
+  margin-left: 15px;
+  margin-bottom: 8px;
+  color: #3da8ff;
+}
+
+.bordes--modifier {
+  font-family: "Manrope" sans-serif;
+  background-color: white;
+  border-radius: 10px;
+  padding: 6px;
+  margin-left: 15px;
+  margin-top: 2px;
+  margin-bottom: 6px;
+}
+
+.bordeenviar {
+  margin-left: 15px;
+  margin-top: 2px;
+}
+
+.bordes--modifier:hover {
+  background-color: #000000;
+  color: #dfe;
+}
+
+.contacto {
+  font-family: "Manrope" sans-serif;
+  color: white;
+  margin-left: 15px;
+}
+
+/* llamado a maps */
+.pay-v, .pay-m, .pay-a, .pay-b, .pay-c, .pay-t, .pay-mp {
+  width: 4%;
+  height: 2%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 2px;
+}
+
+.pay-m {
+  margin-left: 10px;
+}
+
+.pay-a {
+  margin-left: 10px;
+}
+
+.pay-b {
+  margin-left: 10px;
+}
+
+.pay-c {
+  margin-left: 10px;
+}
+
+.pay-t {
+  margin-left: 10px;
+}
+
+.pay-mp {
+  margin-left: 10px;
+}
+
+/* preguntas frecuentes */
+.preguntas {
+  color: white;
+  font-family: "Manrope" sans-serif;
+  text-align: center;
+}
+
+footer {
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+  background-color: #8ab9ff;
+}
+/*# sourceMappingURL=estilos.css.map */
